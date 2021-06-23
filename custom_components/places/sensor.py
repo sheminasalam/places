@@ -669,9 +669,6 @@ class Places(Entity):
                         user_display.append(place_category)
                     if place_type.lower() != "yes":
                         user_display.append(place_type)
-                    user_display.append(place_neighbourhood)
-                    user_display.append(street_number)
-                    user_display.append(street)
                 else:
                     if "street_number" in display_options:
                         user_display.append(street_number)
