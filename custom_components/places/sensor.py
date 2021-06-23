@@ -665,10 +665,6 @@ class Places(Entity):
                 if "place" in display_options:
                     if place_name != "-":
                         user_display.append(place_name)
-                    if place_category.lower() != "place":
-                        user_display.append(place_category)
-                    if place_type.lower() != "yes":
-                        user_display.append(place_type)
                 else:
                     if "street_number" in display_options:
                         user_display.append(street_number)
