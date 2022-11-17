@@ -2177,7 +2177,7 @@ class Places(SensorEntity):
                         + ") New State from DeviceTracker Zone Name: "
                         + str(self.get_attr(ATTR_NATIVE_VALUE))
                     )
-                current_time = "%02d:%02d" % (now.hour, now.minute)
+                current_time = now.strftime("%I:%M:%p")
                 self.set_attr(ATTR_LAST_CHANGED, str(now))
 
                 # Final check to see if the New State is different from the Previous State and should update or not.
