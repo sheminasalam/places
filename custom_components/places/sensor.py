@@ -2421,7 +2421,7 @@ class Places(SensorEntity):
                         f"({self._get_attr(CONF_NAME)}) New State from Tracked Entity Zone Name: "
                         f"{self._get_attr(ATTR_NATIVE_VALUE)}"
                     )
-                current_time = f"{now.hour:02}:{now.minute:02}"
+                current_time = now.strftime("%I:%M:%p")
                 self._set_attr(
                     ATTR_LAST_CHANGED, str(now.isoformat(sep=" ", timespec="seconds"))
                 )
